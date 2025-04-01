@@ -1,11 +1,12 @@
 """
 FastAPI application entry point.
 """ 
-
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
 from app.core.db import test_db_connection
+
+# add routers
 
 # Create FastAPI app
 app = FastAPI(
