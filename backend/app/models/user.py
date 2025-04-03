@@ -21,5 +21,3 @@ class User(SQLAlchemyBaseUserTable[int], Base):
     first_name = Column(String(length=50), nullable=True)
     last_name = Column(String(length=50), nullable=True)
     
-    # Relationships
-    projects = relationship("Project", back_populates="user", cascade="all, delete-orphan") 
